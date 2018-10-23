@@ -15,7 +15,7 @@
   <div class="jumbotron" style="margin-bottom: 0px">
     <h1 class="display-4">livres++</h1>
     <hr class="my-4">
-    <p>Highlight when the price per page is more than:</p>
+    <p>Highlight when the page $ is more than:</p>
     <select id="pricePerPage">
      <option value="5">5</option>
      <option value="6">6</option>
@@ -23,13 +23,29 @@
      <option value="8">8</option>
      <option value="9">9</option>
      <option value="10">10</option>
+     <option value="smart">smart</option>
     </select>
-  
+
     <button class="btn btn-primary btn-sm" id="save" type="button">Save</button>
-    <hr class="my-4">
-    <span class="badge badge-secondary">Developed by Dmytro Pazynych</span>
+
+      <footer class="footer">
+            <div class="container">
+              <span class="text-muted">Developed by Dmytro Pazynych</span>
+            </div>
+      </footer>
   </div>
   
+<style>
+  .footer {
+  position: absolute;
+  bottom: 0;
+}
+.text-muted {
+  font-size: 11px;
+
+}
+
+</style>
 
 
 <script src="options.js"></script>
