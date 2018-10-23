@@ -1,5 +1,5 @@
 {
-"name":"livres++",
+"name":"livres++ (beta)",
 "description":"Chrome extension for Livingson's system",
 "version":"1.2",
 "manifest_version":2,
@@ -19,9 +19,9 @@
 },
 "content_scripts": [
     {
-      "matches": ["https://myaccount.lrwriters.com/findorders/*"],
+      "matches": ["https://myaccount.lrwriters.com/findorders*"],
       "run_at": "document_idle",
-      "js": ["myscript.js"]
+      "js": ["findOrders.js"]
     }
   ]
 }
